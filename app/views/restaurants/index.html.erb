@@ -1,0 +1,6 @@
+<% @restaurants.each do |res| %>
+<li><%= link_to "#{res.name}", "restaurants/#{res.id}/reviews" %></li>
+<% end %>
+
+<%= link_to "Add New Restaurant", "restaurants/new" %>
+
